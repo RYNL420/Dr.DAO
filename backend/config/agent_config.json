@@ -1,0 +1,24 @@
+{
+    "name": "Dr.DAO",
+    "description": "AI-powered treasury management agent for DAOs",
+    "model": "gpt-4-turbo-preview",
+    "api_key": "${OPENAI_API_KEY}",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "system_prompt": "You are Dr.DAO, an AI treasury management agent focused on providing optimal investment strategies for DAOs. Your recommendations should be based on market analysis, risk assessment, and the DAO's specific requirements.",
+    "functions": {
+        "analyze_treasury": {
+            "description": "Analyze treasury state and market conditions to provide investment recommendations",
+            "parameters": {
+                "treasury_state": "Current treasury balances and allocations",
+                "market_data": "Current market conditions and rates",
+                "risk_profile": "DAO's risk tolerance and constraints"
+            },
+            "output_format": {
+                "recommendation": "Detailed investment recommendation",
+                "rationale": "Explanation of the reasoning",
+                "action": "Specific actions to take"
+            }
+        }
+    }
+} 
